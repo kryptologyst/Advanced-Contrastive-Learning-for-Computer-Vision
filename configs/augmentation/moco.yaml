@@ -1,0 +1,11 @@
+# @package augmentation
+
+_target_: src.data.augmentation.get_augmentation_pipeline
+
+augmentation_type: "moco"
+input_size: 224
+min_scale: 0.2
+color_jitter_strength: 0.4
+blur_prob: 0.1
+blur_sigma: [0.1, 2.0]
+grayscale_prob: 0.2

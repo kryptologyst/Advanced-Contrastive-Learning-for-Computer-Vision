@@ -1,0 +1,23 @@
+# @package training
+
+_target_: src.train.trainer.create_optimizer
+
+optimizer_name: "adamw"
+learning_rate: 1e-3
+weight_decay: 1e-4
+betas: [0.9, 0.999]
+eps: 1e-8
+
+# Scheduler configuration
+scheduler:
+  _target_: src.train.trainer.create_scheduler
+  scheduler_name: "cosine"
+  max_epochs: 100
+
+# Training configuration
+max_epochs: 100
+gradient_clip_val: 1.0
+mixed_precision: true
+accumulation_steps: 1
+log_interval: 100
+save_interval: 1000

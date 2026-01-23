@@ -1,0 +1,43 @@
+# Core ML dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Data processing and augmentation
+kornia>=0.7.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+albumentations>=1.3.0
+
+# Configuration and logging
+omegaconf>=2.3.0
+hydra-core>=1.3.0
+wandb>=0.15.0
+tensorboard>=2.13.0
+tqdm>=4.65.0
+
+# Visualization and plotting
+matplotlib>=3.7.0
+plotly>=5.15.0
+seaborn>=0.12.0
+
+# Development and testing
+black>=23.0.0
+ruff>=0.0.280
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pre-commit>=3.3.0
+
+# Demo and serving
+streamlit>=1.25.0
+gradio>=3.40.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Optional: Advanced features
+# transformers>=4.30.0  # For CLIP integration
+# lightly>=1.4.0       # For advanced contrastive learning
+# faiss-cpu>=1.7.4     # For efficient similarity search

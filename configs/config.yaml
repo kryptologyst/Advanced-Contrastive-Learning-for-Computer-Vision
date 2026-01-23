@@ -1,0 +1,37 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - model: simclr
+  - data: cifar10
+  - training: default
+  - augmentation: simclr
+
+# Experiment configuration
+experiment:
+  name: "contrastive_learning_experiment"
+  tags: ["simclr", "cifar10", "baseline"]
+  notes: "Baseline SimCLR experiment on CIFAR-10"
+
+# Logging configuration
+logging:
+  level: INFO
+  log_dir: "./logs"
+  wandb:
+    enabled: false
+    project: "contrastive-learning"
+    entity: null
+    tags: ["simclr", "cifar10"]
+
+# Device configuration
+device: "auto"  # auto, cuda, mps, cpu
+
+# Reproducibility
+seed: 42
+
+# Paths
+paths:
+  data_dir: "./data"
+  checkpoint_dir: "./checkpoints"
+  output_dir: "./outputs"
+  assets_dir: "./assets"

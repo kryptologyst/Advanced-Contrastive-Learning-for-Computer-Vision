@@ -1,0 +1,10 @@
+# @package model
+
+_target_: src.models.contrastive.SimCLR
+
+backbone: "resnet50"
+pretrained: true
+projection_dim: 128
+hidden_dim: 2048
+temperature: 0.07
+freeze_backbone: false

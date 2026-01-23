@@ -1,0 +1,10 @@
+# @package model
+
+_target_: src.models.contrastive.BYOL
+
+backbone: "resnet50"
+pretrained: true
+projection_dim: 256
+hidden_dim: 4096
+prediction_dim: 256
+momentum: 0.996
